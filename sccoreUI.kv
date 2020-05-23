@@ -1,0 +1,189 @@
+
+<MainWindow>:
+
+    GridLayout:
+        cols: 1
+        rows: 4
+        padding: 100
+        spacing: 100
+
+        Label:
+            text: ""
+
+        Label:
+            text: "DO YOU WANT A PLAY SCCORE ?"
+
+        GridLayout:
+            cols: 2
+            padding: 30
+            spacing: 100
+
+            Button:
+                text: "PLAY"
+                on_release:
+                    root.passScreen()
+
+            Button:
+                text: "EXIT"
+                on_release:
+                    root.quit()
+
+
+        Label:
+            text: ""
+
+
+<CategoryWindow>:
+
+    GridLayout:
+        cols: 1
+        rows: 7
+        spacing: 50
+        padding: 200
+
+        Label:
+            text: ""
+
+
+        Button:
+            id: 'btnScience'
+            text: "SCIENCE & TECHNOLOGY"
+            on_release:
+                root.passScreenScience()
+
+
+        Button:
+            id: 'btnSports'
+            text: "SPORTS"
+            on_release:
+                root.passScreenSports()
+
+
+        Button:
+            id: 'btnHistory'
+            text: "HISTORY"
+            on_release:
+                root.passScreenHistory()
+
+
+<LevelWindow>:
+
+    GridLayout:
+        cols: 1
+        rows: 7
+        padding: 200
+        spacing: 50
+
+        Label:
+            text: ""
+
+
+        Button:
+            id: btnEasy
+            text: "EASY"
+            on_release:
+                root.passScreenEasy()
+
+
+        Button:
+            id: btnMedium
+            text: "MEDIUM"
+            on_release:
+                root.passScreenMedium()
+
+
+        Button:
+            id: btnHard
+            text: "HARD"
+            on_release:
+                root.passScreenHard()
+
+
+
+<QuestionWindow> :
+    button1: button1
+    button2: button2
+    button3: button3
+    button4: button4
+    sccoreLabel : sccoreLabel
+    questionLabel: questionLabel
+    cols: 3
+
+    GridLayout:
+        rows: 3
+
+        GridLayout:
+            cols: 2
+            rows: 1
+            Label:
+                text: "sccore : "
+
+            Label:
+                id: sccoreLabel
+                text: "0"
+
+        GridLayout:
+            rows: 1
+            cols: 1
+            Label:
+                id: questionLabel
+                text: ''
+
+
+        GridLayout:
+            cols: 2
+            rows: 2
+
+            Button:
+                id: button1
+                text: ''
+                on_release:
+                    root.button1_action()
+
+
+            Button:
+                id: button2
+                text: ''
+                on_release:
+                    root.button2_action()
+
+            Button:
+                id: button3
+                text: ''
+                on_release:
+                    root.button3_action()
+
+            Button:
+                id: button4
+                text: ''
+                on_release:
+                    root.button4_action()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
