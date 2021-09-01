@@ -10,5 +10,7 @@
 # API 
 - Open Trivia DB : https://opentdb.com/
 
+# Youtube 
+- https://www.youtube.com/watch?v=-dpcHTNlZlw&t=251s
 
 
